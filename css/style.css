@@ -1,0 +1,208 @@
+header{
+    position: relative;
+    overflow: hidden;
+}
+header nav{
+    background-color: #010101;
+}
+header nav  .btn1{
+    border-radius: 0;
+    background-color: #ff7404;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+
+header .carosuel-slide{
+    height: 100vh !important;
+    min-height: 600px !important;
+}
+/* .carosuel-slide .carosuel-item{
+
+} */
+header .carousel-item img{
+    object-fit: cover !important;
+    object-position: center center;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+}
+.darkeffect{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.25 );
+}
+.feedback{
+    padding: 30px 0 50px 0;
+    width: 100%;
+     min-height: 500px;
+    /* height: 40vh;  */
+    background-color: #f8f9fa;
+}
+.rotate{
+    position: absolute;
+    width: 110%;
+    height: 150px;
+    background-color: #f8f9fa;
+    z-index: 4;
+    bottom: -80px;
+    left: -30px;
+    transform: rotate(-7deg);
+}
+.text-container{
+    top: 40%;
+    transform: translateY(-50%);
+}
+.text-container h1{font: 800 2.7em/1.2 "Open Sans";}
+.text-container p{font: 1.5em/1.2 "Open Sans";}
+.text-container button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Open Sans";       
+    padding: 7px 20px; 
+}
+.feedback{position: relative;}
+.feedback .wrapIcon {
+    width: 80px;
+    height: 80px;
+    background-color: #ff7404;
+    border-radius: 50%;
+}
+.feedback h3{
+    color: #ff7404;
+    font: normal 1em/1 "Open Sans";
+    letter-spacing: 3px;
+}
+.feedback p{
+    color: #868e96;
+    font: normal .9em/1.8 "Open Sans";
+}
+.feedback .rotate{
+    background-color: #fff;
+    bottom: -50px;
+}
+.container{max-width: 1140px;}
+
+.restaurant{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+.hr{
+     width: 80px;
+     height: 2px;
+     color: #ff5404;
+     background-color: #ff4b04;
+}
+.restaurant img{
+    width: 60%;
+    margin-bottom: 10px;
+    object-position: center center;
+}
+.restaurant h2{font: 800 3em "Open Sans";}
+.restaurant p{font: .9em/2 "Open Sans"; color: #868e96;}
+
+.restaurant{
+    margin-bottom: 50px;
+}
+.special h2{font: 800 3em "Open Sans";}
+.special{min-height: 100vh;}
+
+/* .special .brocoli{
+    background: url(../img/dishes_1.jpg.webp) center/cover; 
+    background-size: 100%;
+    background-clip: border-box;
+} */
+/* .special .spicy{background: url(../img/dishes_2.jpg.webp) center/cover;} */
+/* .special .eggplant{background: url(../img/dishes_3.jpg.webp) center/cover;} */
+.special .menu .col{
+    position: relative;
+}
+.special .menu .col img{
+    width: 100%;
+    position: relative;
+}
+.special .menu .col:hover .special .menu .col img{
+    transform: scale(1.05);
+}
+
+
+@media only screen and (min-width:768px) {
+    header nav{
+        position:absolute !important;
+        width: 100%;
+        z-index: 3;
+        top: 20px;
+        background-color: transparent;
+    }
+    header .carosuel-slide{
+        position: absolute !important;
+        z-index: 1;
+        top: -150px;
+    }
+    header .rotate{
+        position: absolute;
+        width: 110%;
+        height: 200px;
+        background-color: #f8f9fa;
+        z-index: 3;
+        bottom: -70px;
+        transform: rotate(-5deg);
+    }
+    .text-container{
+        top: 20%;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    .text-container h1{font: 800 5em/1.2 "Open Sans";}
+    .text-container p{font: 1.5rem/1.2 "Open Sans";}
+    .feedback .container{
+        max-width: 1140px;
+    }
+    .feedback{height: 50vh;}
+    .feedback .rotate{
+        background-color: #fff;
+        bottom: -100px;
+        height: 200px;
+        transform: rotate(-4deg);
+    }
+    .restaurant{
+        margin-bottom: 50px;
+    }
+    .restaurant img{
+        width: 80%;
+    }
+    .special .col{height: 100vh;}
+
+    .special .menu{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .special .menu .col .price{
+        position: absolute;
+        z-index: 6;
+        top: 30%;
+        left: 40%;
+        transform: translate(-50% -50%);
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        background-color: #ff7404;
+        border-radius: 50%;
+    }                 
+
+
+}
+@media only screen and (min-width:992px) {
+    .restaurant img{
+        width: 100%;
+        margin-bottom: 10px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
